@@ -11,17 +11,27 @@ module use /apps/modulefiles/test
 
 ### Creating modules for custom software:
 
-- Install software under
-`/apps/lab/aryee/`
+- Install software in the following directory: 
+```
+/apps/lab/aryee/
+```
 
-- Then create a modulefile under
-`/apps/modulefiles/lab/aryee/`
+- Then create a modulefile under the following location: 
+```
+/apps/modulefiles/lab/aryee/
+```
 
 - Here is a simple example you can copy/edit:
-`/apps/modulefiles/lab/aryee/bwtool`
+```
+/apps/modulefiles/lab/aryee/bwtool
+```
 
 - Use your new module:
-`module load aryee/[YOUR_NEW_MODULE]`
+```
+module load aryee/[YOUR_NEW_MODULE]
+```
 
 - Or better yet, add it to your `.bashrc`:
-`echo "module load module load aryee/[YOUR_NEW_MODULE]" >> $HOME/.bashrc`
+```
+echo "module load module load aryee/[YOUR_NEW_MODULE]" >> $HOME/.bashrc
+```
