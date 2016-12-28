@@ -13,3 +13,5 @@ bsub < HiCPro_step1_hic.sh
 # Wait for jobs to finish
 bsub < HiCPro_step2_hic.sh
 ```
+
+Configuration file found [here](https://raw.githubusercontent.com/aryeelab/LabGuide/master/data/config-human-mboi-ext12.txt)
