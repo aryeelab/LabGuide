@@ -6,7 +6,8 @@ for(s in samples){
   base <- "/PHShome/ma695/work/projects/gbm_topology/output/hicpro/johnstone_gbm_mincisdist1000/hic_results/matrix"
   
   resolutions <- c("20000", "40000", "150000", "500000", "1000000")
-  matrix.files <- paste0(base, "/", s, "/iced/", resolutions, "/", s, "_", resolutions, ".matrix")  #change iced to raw if so desired
+  matrix.files <- paste0(base, "/", s, "/raw/", resolutions, "/", s, "_", resolutions, ".matrix")  # Raw, obviously
+  # matrix.files <- paste0(base, "/", s, "/raw/", resolutions, "/", s, "_", resolutions, "_iced.matrix") # Iced
   bed.files <- paste0(base, "/", s, "/raw/", resolutions, "/", s, "_", resolutions, "_abs.bed")
   
   HiCPro2DNAlandscapeR(matrix.files = matrix.files, bed.files = bed.files, resolutions = resolutions,
