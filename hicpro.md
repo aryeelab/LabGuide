@@ -4,7 +4,7 @@ module load aryee/hicpro-2.7.6
 ```
 It's installed:
 ```
-/apps/lab/aryee/HiC-Pro_2.7.6/HiC-Pro-2.7.6/
+/apps/lab/aryee/HiC-Pro_2.7.6
 ```
 
 
