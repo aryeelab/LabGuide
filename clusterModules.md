@@ -33,5 +33,5 @@ module load aryee/[YOUR_NEW_MODULE]
 
 - Or better yet, add it to your `.bashrc`:
 ```
-echo "module load module load aryee/[YOUR_NEW_MODULE]" >> $HOME/.bashrc
+echo "module load aryee/[YOUR_NEW_MODULE]" >> $HOME/.bashrc
 ```
