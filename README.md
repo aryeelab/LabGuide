@@ -1,6 +1,5 @@
 <br><br>
 # Institutional Tips, Tricks, and Knowledge 
-
 ### Aryee Lab
 
 A web resource for useful scripts, data, workflows, and vignettes.
@@ -17,3 +16,4 @@ A web resource for useful scripts, data, workflows, and vignettes.
 
 # Vignettes
 
+<br><br>
