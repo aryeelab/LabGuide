@@ -1,3 +1,4 @@
+<br><br>
 # Adding modules to be imported
 Quick guide how to add modules to rgs13
 
@@ -35,3 +36,4 @@ module load aryee/[YOUR_NEW_MODULE]
 ```
 echo "module load aryee/[YOUR_NEW_MODULE]" >> $HOME/.bashrc
 ```
+<br><br>

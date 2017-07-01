@@ -1,3 +1,4 @@
+<br><br>
 # Getting started in the Aryee Lab
 
 ## Accounts
@@ -26,3 +27,4 @@ Log out (and back in) after copying-and-pasting this command
 ## Key papers
 
 Some sort of annotated walkthrough of the contents + summaries of the papers? 
+<br><br>

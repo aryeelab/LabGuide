@@ -1,3 +1,4 @@
+<br><br>
 # Running Hi-C Pro on rgs13
 ```
 module load aryee/hicpro-2.7.6 
@@ -19,4 +20,7 @@ bsub < HiCPro_step1_hic.sh
 bsub < HiCPro_step2_hic.sh
 ```
 
-Configuration file found [here](https://raw.githubusercontent.com/aryeelab/LabGuide/master/data/config-human-mboi-ext12.txt)
+Configuration file found for MboI in human (most common digestion) found 
+[here](https://raw.githubusercontent.com/aryeelab/LabGuide/master/data/config-human-mboi-ext12.txt)
+
+<br><br>
