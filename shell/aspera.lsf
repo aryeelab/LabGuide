@@ -12,16 +12,17 @@
 
 #module load aryee/bwa-0.7.9a
 module load aryee/sratoolkit-2.3.5
-module load sratool/2.3.5
+#module load sratool/2.3.5
 ASPERA=/apps/lab/aryee/aspera-connect-3.5.6/
 
+
+SRR_IDS=$(cat $1 |tr "\n" " ")
 mkdir fastq
 cd fastq
 
-SRR_IDS="SRR4026105 SRR4026106 SRR4026107"
-
 for SRR_ID in $SRR_IDS
 do
+echo $SRR_ID
 $ASPERA/bin/ascp -i $ASPERA/etc/asperaweb_id_dsa.openssh -T -k 2 -l 400M anonftp@ftp.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/${SRR_ID:0:6}/${SRR_ID}/${SRR_ID}.sra .
-bsub -q medium fastq-dump --split-files --gzip ${SRR_ID}.sra
+bsub -q normal fastq-dump --split-files --gzip ${SRR_ID}.sra
 done
