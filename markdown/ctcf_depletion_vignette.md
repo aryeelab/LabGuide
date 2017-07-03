@@ -16,7 +16,7 @@ such annotation files.
 
 ```
 cd /data/aryee/caleb/ctcf_depletion/data
- HiC-Pro -i fastq/ -c config-mouse-mboi-ext12.txt -o hicpro_output -p
+ HiC-Pro -i fastq/ -c config-mouse-hindiii-ext12.txt -o hicpro_output -p
 cd output/hicpro/rao_imr90
 # Remove parameter-less bsub options (e.g. "-N") HiCPro_step1_hicpro.sh, HiCPro_step2_hicpro.sh  
 bsub < HiCPro_step1_hic.sh 
