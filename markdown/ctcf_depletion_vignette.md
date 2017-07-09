@@ -104,18 +104,41 @@ such annotation files.
 ```
 
 The big things that you want to ensure are correct are that you 1) have the right organism / genome build
-and 2) you have the correct restriction enzyme for digestion. 
+and 2) you have the correct restriction enzyme for digestion. The configuration file that I used for this
+round of processing [can be found here](../data/config-mouse-hindiii-ext12.txt), which was the `mm9`
+genome build + HindIII restriction enzyme cutter. 
 
 ### Running HiC-Pro
+
+This is mostly duplicated from the [HiC-Pro](hicpro.md) page, but here are the specific 
+commands that were run. 
 
 ```
 cd /data/aryee/caleb/ctcf_depletion/data
  HiC-Pro -i fastq/ -c config-mouse-hindiii-ext12.txt -o hicpro_output -p
-cd output/hicpro/rao_imr90
+cd hicpro_output
 # Remove parameter-less bsub options (e.g. "-N") HiCPro_step1_hicpro.sh, HiCPro_step2_hicpro.sh  
 bsub < HiCPro_step1_hic.sh 
-# Wait for jobs to finish
+# Wait for jobs to finish; in this case > 24 hrs
 bsub < HiCPro_step2_hic.sh
+# Finishes in about 24 hours
 ```
+
+### HiC-Pro -> sparseHiC
+
+The last step isn't as turn-key as the others, but it's still relatively straight forward.  
+Basically all you have to do is run [this Rscript](../Rscripts/ctcfd_sparseHiC.R). You know, 
+just `bsub -q big Rscript ctcfd_sparseHiC.R` (it is parallelizable if you know what you're doing
+with `sparseHiC` according to my notes, but since I forgot how to make it work, I wouldn't 
+recommend it). Anyways, here are a few notes on running:
+
+- It will create one `.tgz` file per sample in the current working directory. 
+- Run the script from two different directories at the same time to get both
+iced and raw simultaneously. 
+- Once can interchangeably comment lines 11 and 12 to get either raw or iced output. 
+- Line 13 must be left as is (even though it points to raw for the `.bed` file. This
+is HiC-Pro convention, and the `.bed` files are the same anyways so don't worry about it. 
+
+**Contact**: [Caleb](mailto:caleblareau@g.harvard.edu) with questions.
 
 <br><br>
