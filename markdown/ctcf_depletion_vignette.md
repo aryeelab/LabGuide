@@ -12,6 +12,9 @@ such annotation files.
 /apps/lab/aryee/HiC-Pro_2.7.6/annotation
 ```
 
+The big things that you want to ensure are correct are that you 1) have the right organism / genome build
+and 2) you have the correct restriction enzyme for digestion. F
+
 ### Running HiC-Pro
 
 ```
