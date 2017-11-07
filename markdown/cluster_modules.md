@@ -13,8 +13,16 @@ module use /apps/modulefiles/test
 ### Creating modules for custom software:
 
 - Install software in the following directory: 
+
 ```
 /apps/lab/aryee/
+```
+
+**Note:** for things with `make` files, this is useful:
+
+```
+./configure --prefix=`pwd`
+make && make install
 ```
 
 - Then create a modulefile under the following location: 

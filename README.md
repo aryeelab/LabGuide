@@ -8,6 +8,7 @@ A web resource for useful scripts, data, workflows, and vignettes.
 - Find our [quick start page here](markdown/quickstart.md)
 
 ## Navigating Erisone
+- [Accessing Erisone](shell/erisoneSSH.html)
 - [Information on accessing/installing modules here](markdown/cluster_modules.md)
 - [Summary of data/storage usage](markdown/data_usage.md)
 
