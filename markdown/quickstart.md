@@ -19,12 +19,12 @@ Some of these things requires other people to take action, but usually you need 
 2. On a Mac/Linux open Terminal and connect to the ERISone cluster using your Partners' username and password: `ssh USERNAME@rgs13.research.partners.org`
 Note: More details are available in the [first time cluster user's guide on the Partner's Research Computing website](https://rc.partners.org/kb/article/2164).
 
+## Request Partners VPN access
+
+Accessing the ERISone cluster from outside the Partners network requires a VPN connection. Apply for VPN access using the link on this page: https://rc.partners.org/kb/article/2894
+
 #### One-time setup
 This step only needs to be carried out once to make tools installed by our lab available:
 `echo "module use /apps/modulefiles/lab" >> $HOME/.bashrc`
 Log out (and back in) after copying-and-pasting this command
 
-## Key papers
-
-Some sort of annotated walkthrough of the contents + summaries of the papers? 
-<br><br>
